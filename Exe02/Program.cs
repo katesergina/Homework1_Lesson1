@@ -1,13 +1,8 @@
-﻿Console.WriteLine("Введите первое число:");
-int a = int.Parse(Console.ReadLine());
-Console.WriteLine("Введите второе число:");
-int b = int.Parse(Console.ReadLine());
-Console.WriteLine("Введите третье число:");
-int c = int.Parse(Console.ReadLine());
-
-int max = a;
-
-if(b > max ) max = b;
-if(c > max ) max = c;
-
-Console.WriteLine("Максимальное число = " + max);
+Console.WriteLine("Enter the number:"); 
+string n = int.Parse(Console.ReadLine()).ToString(); 
+ 
+if (n.Length >=3) { 
+    Console.WriteLine(n[2]); 
+} else { 
+    Console.WriteLine("третьей цифры нет"); 
+}
